@@ -146,7 +146,7 @@ public class TaskServiceImpl implements TaskService {
                 "Title: " + task.getTitle() + "\n" +
                 "Description: " + task.getDescription() + "\n" +
                 "Deadline: " + task.getDueDate() + "\n\n" +
-                "Please review the task and assign it to an available team member.";
+                "Please review the task ";
 
         emailService.sendEmailWithAttachment(userEmail, subject, body, attachmentPath);
 
